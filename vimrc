@@ -24,7 +24,7 @@ inoremap { {}<Esc>i
 "Section for highlight management
 "for folds
 highlight Folded ctermbg=black
-highlight MatchParen cterm=bold ctermbg=none ctermfg=magenta
+highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 
 "startup and mapping for c
 "autocmd FileType c normal i#include <stdio.h>
@@ -34,3 +34,4 @@ autocmd BufNewFile *.c 0r ~/.local/skeletons/skeleton.c
 
 "startup and mapping for python
 autocmd FileType python nnoremap <leader>p iprint("")<Esc>1hi
+autocmd FileType python setlocal foldmethod=indent
