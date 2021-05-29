@@ -6,6 +6,7 @@
 :set tabstop=4
 :set completeopt=menuone,noinsert,noselect
 :colorscheme peachpuff
+:set ignorecase
 
 "Section for global nnoremapping
 nnoremap ;<Space> /<++><Enter>"_c4l
@@ -16,6 +17,7 @@ inoremap [ []<Esc>i
 inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
 inoremap { {}<Esc>i
+inoremap <leader>i <++><Esc>
 
 "Global fold configuration
 "This just sets a fold background to black
