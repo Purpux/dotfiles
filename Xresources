@@ -52,8 +52,8 @@ URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 
 !fake transparecy, without a compositor
-URxvt*transparent: true
-URxvt*shading: 7
+!URxvt*transparent: true
+!URxvt*shading: 7
 
 !urxvt default size
 !URxvt.geometry: 136x40

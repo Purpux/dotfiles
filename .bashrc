@@ -8,7 +8,6 @@
 #aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias lynx='lynx https://lite.duckduckgo.com/lite/'
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 alias cmatrix='cmatrix -C magenta' 
 alias ':wq'='exit' 
