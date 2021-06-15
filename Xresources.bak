@@ -35,7 +35,7 @@
 *.color7:       #ab9bab
 *.color15:      #f7f3f7
 
-Xcursor.theme: Rage-Gothic-Light
+Xcursor.theme: Vimix-cursors
 !Xcursor.size: 16
 
 !!URxvt Appearance
