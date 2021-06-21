@@ -21,7 +21,6 @@ inoremap <leader>a <++><Esc>
 
 
 "Section for highlight management
-"for folds
 highlight Folded ctermbg=black
 highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 

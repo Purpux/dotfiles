@@ -2,5 +2,4 @@
 
 cp ~/.*rc .
 cp ~/.bash_profile .
-cp ~/.config/X11/* .
-rm Xauthority
+cp -r ~/.config/{X11,tmux,openbox} .
