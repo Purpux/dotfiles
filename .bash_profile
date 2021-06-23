@@ -18,4 +18,4 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export HISTFILE="$XDG_DATA_HOME/bash/history"
 export LESSHISTFILE=/dev/null
 
-[[ $(tty) == "/dev/tty1" ]] && startx
+[[ $(tty) == "/dev/tty1" ]] && startx /home/abv/.config/X11/xinitrc

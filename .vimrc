@@ -19,6 +19,10 @@ inoremap ' ''<Esc>i
 inoremap { {}<Esc>i
 inoremap <leader>a <++><Esc>
 
+"Copying to X11 clipboard
+vnoremap <leader>xy :!xclip -i -selection clipboard -f<CR>
+"I have no idea why this works or how it works
+nnoremap <leader>xp mz:+1r !xclip -o -selection clipboard -r<CR>`z
 
 "Section for highlight management
 highlight Folded ctermbg=black

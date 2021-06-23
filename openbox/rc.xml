@@ -46,7 +46,7 @@
 </placement>
 
 <theme>
-  <name>Xinit</name>
+  <name>Lean</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -121,8 +121,8 @@
   <firstdesk>1</firstdesk>
   <names>
     <name>main</name>
-    <name>random</name>
     <name>browser</name>
+    <name>random</name>
   </names>
   <popupTime>800</popupTime>
 </desktops>
