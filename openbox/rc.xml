@@ -46,7 +46,7 @@
 </placement>
 
 <theme>
-  <name>Lean</name>
+  <name>Neon_Knights_Green</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -209,7 +209,7 @@
   </keybind>
 
   <!-- Keybindings for window switching -->
-  <keybind key="W-w">
+  <keybind key="W-n">
   	<action name="NextWindow">
   		<finalactions>
   			<action name="Focus"/>
@@ -271,8 +271,14 @@
     </action>
   </keybind>
 
+  <keybind key="Print">
+    <action name="Execute">
+      <command>screenshot</command>
+    </action>
+  </keybind>
+
   <!--Trying Vim like modal bindings  -->
-  <keybind key="W-n" chroot="true">
+  <keybind key="W-w" chroot="true">
   	<keybind key="i"><action name="BreakChroot"/></keybind>
   	<keybind key="g">
   		<keybind key="g">

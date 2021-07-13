@@ -36,7 +36,7 @@
 *.color15:      #fdf6e3
 
 Xcursor.theme: Wesnoth-cur
-!Xcursor.size: 16
+!Xcursor.size: 64
 
 !!URxvt Appearance
 !Font stuff
