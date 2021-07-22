@@ -46,7 +46,7 @@
 </placement>
 
 <theme>
-  <name>Neon_Knights_Green</name>
+  <name>Neon_Knights_Yellow</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -181,31 +181,24 @@
   <keybind key="A-l">
     <action name="GoToDesktop"><to>right</to><wrap>no</wrap></action>
   </keybind>
-  <keybind key="A-k">
-    <action name="GoToDesktop"><to>up</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="A-j">
-    <action name="GoToDesktop"><to>down</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="C-S-h">
+
+  <!-- Moving windows to desktops-->
+  <keybind key="C-W-h">
     <action name="SendToDesktop"><to>left</to><wrap>no</wrap></action>
   </keybind>
-  <keybind key="C-S-l">
+  <keybind key="C-W-l">
     <action name="SendToDesktop"><to>right</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="C-S-k">
-    <action name="SendToDesktop"><to>up</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="C-S-j">
-    <action name="SendToDesktop"><to>down</to><wrap>no</wrap></action>
   </keybind>
 
   <!-- Keybindings for windows -->
-  <keybind key="C-e">
+  <keybind key="W-i">
     <action name="Close"/>
   </keybind>
   <keybind key="C-m">
     <action name="ToggleMaximizeFull"/>
+  </keybind>
+  <keybind key="W-d">
+    <action name="ToggleShowDesktop"/>
   </keybind>
 
   <!-- Keybindings for window switching -->
@@ -247,6 +240,42 @@
   <keybind key="W-j">
     <action name="DirectionalCycleWindows">
       <direction>down</direction>
+    </action>
+  </keybind>
+
+  <!-- tiling-->
+  <keybind key="C-S-h">
+	<action name="Unmaximize"/>
+    <action name="MoveResizeTo">
+		<x>0</x>
+		<y>0</y>
+		<width>50%</width>
+		<height>100%</height>
+    </action>
+  </keybind>
+  <keybind key="C-S-l">
+	<action name="Unmaximize"/>
+    <action name="MoveResizeTo">
+		<x>50%</x>
+		<y>0</y>
+		<width>50%</width>
+		<height>100%</height>
+    </action>
+  </keybind>
+  <keybind key="C-S-j">
+	<action name="Unmaximize"/>
+    <action name="MoveResizeTo">
+		<y>50%</y>
+		<width>50%</width>
+		<height>50%</height>
+    </action>
+  </keybind>
+  <keybind key="C-S-k">
+	<action name="Unmaximize"/>
+    <action name="MoveResizeTo">
+		<y>0</y>
+		<width>50%</width>
+		<height>50%</height>
     </action>
   </keybind>
 

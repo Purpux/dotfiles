@@ -40,10 +40,10 @@ Xcursor.theme: Wesnoth-cur
 
 !!URxvt Appearance
 !Font stuff
-URxvt.font: xft:Firacode:style=Regular:size=12.9
-URxvt.boldFont: xft:Firacode:style=Bold:size=12.9
-URxvt.italicFont: xft:Firacode:style=SemiBold:size=12.9
-URxvt.boldItalicFont: xft:Firacode:style=Retina:size=12.9
+URxvt.font: xft:Firacode:style=Regular:size=11
+URxvt.boldFont: xft:Firacode:style=Bold:size=11
+URxvt.italicFont: xft:Firacode:style=SemiBold:size=11
+URxvt.boldItalicFont: xft:Firacode:style=Retina:size=11
 
 !Other stuff
 URxvt.scrollBar: false

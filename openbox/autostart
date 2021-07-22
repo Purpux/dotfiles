@@ -1,2 +1,4 @@
-urxvt -name urxvt_start -e tmux
-[[ -f $XDG_CONFIG_HOME/X11/PostXresources ]] && xrdb -load $XDG_CONFIG_HOME/X11/PostXresources
+urxvt -name urxvt_start -e tmux &
+sleep 1
+
+xresources_handle
