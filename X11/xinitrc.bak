@@ -1,4 +1,6 @@
 cursor_handle
+
+setxkbmap -option keypad:pointerkeys &
 [[ -f $XDG_CONFIG_HOME/X11/Xresources ]] && xrdb -load $XDG_CONFIG_HOME/X11/Xresources
 
 [[ -f $XDG_CONFIG_HOME/X11/Xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/Xmodmap
