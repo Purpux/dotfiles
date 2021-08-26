@@ -35,15 +35,15 @@
 *.color7:       #93a1a1
 *.color15:      #fdf6e3
 
-Xcursor.theme: ArchCursorTheme
+Xcursor.theme: Rage-Gothic-Gold
 !Xcursor.size: 64
 
 !!URxvt Appearance
 !Font stuff
-URxvt.font: xft:Firacode:style=Regular:size=11
-URxvt.boldFont: xft:Firacode:style=Bold:size=11
-URxvt.italicFont: xft:Firacode:style=SemiBold:size=11
-URxvt.boldItalicFont: xft:Firacode:style=Retina:size=11
+URxvt.font: xft:Firacode:style=Regular:size=14
+URxvt.boldFont: xft:Firacode:style=Bold:size=14
+URxvt.italicFont: xft:Firacode:style=SemiBold:size=14
+URxvt.boldItalicFont: xft:Firacode:style=Retina:size=14
 
 !Other stuff
 URxvt.scrollBar: false

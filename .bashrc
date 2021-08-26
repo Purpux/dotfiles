@@ -8,8 +8,11 @@
 #aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 alias ':wq'='exit' 
+
+#cleanup
+alias tmux='tmux -f ~/.config/tmux/tmux.conf'
+alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget/history"
 
 #vim settings
 set -o vi

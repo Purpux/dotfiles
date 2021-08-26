@@ -29,7 +29,6 @@ highlight Folded ctermbg=black
 highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 
 "startup and mapping for c
-"autocmd FileType c normal i#include <stdio.h>
 autocmd FileType c nnoremap <leader>p iprintf("\n")<Esc>3hi
 autocmd FileType c setlocal foldmethod=syntax
 autocmd BufNewFile *.c 0r ~/.local/skeletons/skeleton.c
