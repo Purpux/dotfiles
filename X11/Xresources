@@ -35,7 +35,7 @@
 *.color7:       #93a1a1
 *.color15:      #fdf6e3
 
-Xcursor.theme: Rage-Gothic-Gold
+Xcursor.theme: Night-Diamond-Red
 !Xcursor.size: 64
 
 !!URxvt Appearance

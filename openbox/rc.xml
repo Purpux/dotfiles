@@ -46,7 +46,7 @@
 </placement>
 
 <theme>
-  <name>Lean</name>
+  <name>Neon_Knights_Red</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -335,7 +335,7 @@
 <mouse>
   <dragThreshold>1</dragThreshold>
   <!-- number of pixels the mouse must move before a drag begins -->
-  <doubleClickTime>100</doubleClickTime>
+  <doubleClickTime>1</doubleClickTime>
   <!-- in milliseconds (1000 = 1 second) -->
   <screenEdgeWarpTime>300</screenEdgeWarpTime>
   <!-- Time before changing desktops when the pointer touches the edge of the
@@ -653,6 +653,16 @@
 		<decor>no</decor>
 		<shade>yes</shade>
 		<fullscreen>yes</fullscreen>
+	</application>
+
+	<application name="urxvt_calendar">
+		<decor>no</decor>
+		<shade>yes</shade>
+		<desktop>3</desktop>
+		<position>
+			<x>87%</x>
+			<y>0%</y>
+		</position>
 	</application>
 </applications>
 
