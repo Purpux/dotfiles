@@ -1,16 +1,18 @@
 "global settings
-let mapleader='\'
+let mapleader=';'
+set ttyfast
 set number
 set autoindent
 set tabstop=4
 set completeopt=menuone,noinsert,noselect
 set ignorecase
 set incsearch
+set secure
 colorscheme peachpuff
 syntax on
 
 "Section for global nnoremapping
-nnoremap ;<Space> /<++><Enter>"_c4l
+nnoremap <leader><Space> /<++><Enter>"_c4l
 
 "Section for global inoremaping
 inoremap ( ()<Esc>i
@@ -29,6 +31,5 @@ highlight Folded ctermbg=black
 highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 
 "startup and mapping for c
-autocmd FileType c nnoremap <leader>p iprintf("\n")<Esc>3hi
 autocmd FileType c setlocal foldmethod=syntax
 autocmd BufNewFile *.c 0r ~/.local/skeletons/skeleton.c
