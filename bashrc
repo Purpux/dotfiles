@@ -13,6 +13,7 @@ alias ':wq'='exit'
 #cleanup
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget/history"
+alias rm="rm -i"
 
 #global settings
 set -o vi

@@ -35,7 +35,7 @@
 *.color7:       #93a1a1
 *.color15:      #fdf6e3
 
-Xcursor.theme: Night-Diamond-Red
+Xcursor.theme: Hacked-Sky
 !Xcursor.size: 64
 
 !!URxvt Appearance
