@@ -25,7 +25,7 @@
 </placement>
 
 <theme>
-  <name>Neon_Knights_Violet</name>
+  <name>Nordic</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -117,10 +117,10 @@
   <chainQuitKey>C-g</chainQuitKey>
 
   <!-- Keybindings for desktop switching -->
-  <keybind key="A-h">
+  <keybind key="W-h">
     <action name="GoToDesktop"><to>left</to><wrap>no</wrap></action>
   </keybind>
-  <keybind key="A-l">
+  <keybind key="W-l">
     <action name="GoToDesktop"><to>right</to><wrap>no</wrap></action>
   </keybind>
 
@@ -136,7 +136,7 @@
   <keybind key="W-i">
     <action name="Close"/>
   </keybind>
-  <keybind key="C-m">
+  <keybind key="W-m">
     <action name="ToggleMaximizeFull"/>
   </keybind>
   <keybind key="W-d">
@@ -164,22 +164,22 @@
   </keybind>
 
   <!-- Directional window cycling-->
-  <keybind key="W-l">
+  <keybind key="A-l">
     <action name="DirectionalCycleWindows">
       <direction>right</direction>
     </action>
   </keybind>
-  <keybind key="W-h">
+  <keybind key="A-h">
     <action name="DirectionalCycleWindows">
       <direction>left</direction>
     </action>
   </keybind>
-  <keybind key="W-k">
+  <keybind key="A-k">
     <action name="DirectionalCycleWindows">
       <direction>up</direction>
     </action>
   </keybind>
-  <keybind key="W-j">
+  <keybind key="A-j">
     <action name="DirectionalCycleWindows">
       <direction>down</direction>
     </action>

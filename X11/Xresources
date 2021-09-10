@@ -35,7 +35,7 @@
 *.color7:       #93a1a1
 *.color15:      #fdf6e3
 
-Xcursor.theme: Hacked-Sky
+Xcursor.theme: Rage-Gothic-Gold
 !Xcursor.size: 64
 
 !!URxvt Appearance
@@ -55,7 +55,7 @@ URxvt.lineSpace: 0
 !URxvt*shading: 7
 
 !urxvt default size
-!URxvt.geometry: 136x40
+!URxvt*geometry: 155x40+0+0
 
 !!lwm
 lwm.button2: urxvt
