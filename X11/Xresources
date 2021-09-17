@@ -35,15 +35,15 @@
 *.color7:       #93a1a1
 *.color15:      #fdf6e3
 
-Xcursor.theme: Rage-Gothic-Gold
+Xcursor.theme: Wesnoth-cur
 !Xcursor.size: 64
 
 !!URxvt Appearance
 !Font stuff
-URxvt.font: xft:Firacode:style=Regular:size=14
-URxvt.boldFont: xft:Firacode:style=Bold:size=14
-URxvt.italicFont: xft:Firacode:style=SemiBold:size=14
-URxvt.boldItalicFont: xft:Firacode:style=Retina:size=14
+URxvt.font: xft:Firacode:style=Regular:size=14.5
+URxvt.boldFont: xft:Firacode:style=Bold:size=14.5
+URxvt.italicFont: xft:Firacode:style=SemiBold:size=14.5
+URxvt.boldItalicFont: xft:Firacode:style=Retina:size=14.5
 
 !Other stuff
 URxvt.scrollBar: false
@@ -54,8 +54,8 @@ URxvt.lineSpace: 0
 !URxvt*transparent: true
 !URxvt*shading: 7
 
-!urxvt default size
-!URxvt*geometry: 155x40+0+0
+!!Perl scripts
+urxvt.perl-ext-common: resize-font
 
 !!lwm
 lwm.button2: urxvt

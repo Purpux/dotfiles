@@ -1,4 +1,1 @@
-urxvt -name urxvt_start -e tmux &
-sleep 1
-
 xresources_handle
