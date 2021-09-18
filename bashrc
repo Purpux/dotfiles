@@ -8,12 +8,13 @@
 #aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias rm="rm -i"
 alias ':wq'='exit' 
 
 #cleanup
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget/history"
-alias rm="rm -i"
+alias vncviewer="HOME=$XDG_CONFIG_HOME/vnc"
 
 #global settings
 set -o vi

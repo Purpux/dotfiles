@@ -21,5 +21,7 @@ export MYSQL_HISTFILE="$XDG_DATA_HOME/mysql/history"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export PULSE_COOKIE="$XDG_DATA_HOME/pulse/pulse-cookie"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"|source $MYVIMRC'
+export GNUPGHOME="$XDG_CONFIG_HOME/gnupg"
 
 [[ $(tty) == "/dev/tty1" ]] && startx $XDG_CONFIG_HOME/X11/xinitrc

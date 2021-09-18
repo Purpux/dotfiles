@@ -1,3 +1,6 @@
+"respecting XDG
+set viminfo+=n$XDG_CACHE_HOME/vim/viminfo "moves .viminfo to cache
+
 "global settings
 let mapleader=';'
 set ttyfast

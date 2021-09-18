@@ -25,7 +25,7 @@
 </placement>
 
 <theme>
-  <name>dark-party</name>
+  <name>blacksand-pink</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -122,6 +122,9 @@
   </keybind>
   <keybind key="W-l">
     <action name="GoToDesktop"><to>right</to><wrap>no</wrap></action>
+  </keybind>
+  <keybind key="W-o">
+    <action name="GoToDesktop"><to>1</to><wrap>no</wrap></action>
   </keybind>
 
   <!-- Moving windows to desktops-->

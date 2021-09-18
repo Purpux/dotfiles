@@ -35,7 +35,7 @@
 *.color7:       #93a1a1
 *.color15:      #fdf6e3
 
-Xcursor.theme: Wesnoth-cur
+Xcursor.theme: Layan-border-cursors
 !Xcursor.size: 64
 
 !!URxvt Appearance
