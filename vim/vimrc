@@ -2,7 +2,7 @@
 set viminfo+=n$XDG_CACHE_HOME/vim/viminfo "moves .viminfo to cache
 
 "global settings
-let mapleader=';'
+let mapleader='\'
 set ttyfast
 set number
 set autoindent
@@ -15,7 +15,7 @@ colorscheme peachpuff
 syntax on
 
 "Section for global nnoremapping
-nnoremap <leader><Space> /<++><Enter>"_c4l
+nnoremap ;<Space> /<++><Enter>"_c4l
 
 "Section for global inoremaping
 inoremap ( ()<Esc>i
@@ -25,9 +25,9 @@ inoremap ' ''<Esc>i
 inoremap { {}<Esc>i
 inoremap <leader>a <++><Esc>
 
-" I have no idea why this works or how it works Copying to X11 clipboard
+"Copying and pasting to X11 clip
 vnoremap gy :!xclip -i -selection clipboard -f<CR>
-nnoremap gp mz:-1r !xclip -o -selection clipboard -r<CR>`z
+nnoremap gp :-1r !xclip -o -selection clipboard -r<CR>
 
 "Section for highlight management
 highlight Folded ctermbg=black

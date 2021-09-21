@@ -25,7 +25,7 @@
 </placement>
 
 <theme>
-  <name>blacksand-pink</name>
+  <name>Nord-Openbox</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.

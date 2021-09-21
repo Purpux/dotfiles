@@ -14,7 +14,7 @@ alias ':wq'='exit'
 #cleanup
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget/history"
-alias vncviewer="HOME=$XDG_CONFIG_HOME/vnc"
+alias vncviewer="HOME=$XDG_CONFIG_HOME/vnc vncviewer"
 
 #global settings
 set -o vi
