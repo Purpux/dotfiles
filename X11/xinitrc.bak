@@ -1,0 +1,10 @@
+cursor_handle
+
+[ -f $XDG_CONFIG_HOME/X11/Xresources ] && xrdb -load $XDG_CONFIG_HOME/X11/Xresources
+
+xset r rate 200 &
+wallpaper &
+xcompmgr -c &
+
+urxvt -name urxvt_start -e tmux &
+exec lwm

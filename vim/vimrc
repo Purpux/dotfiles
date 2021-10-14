@@ -16,6 +16,8 @@ syntax on
 
 "Section for global nnoremapping
 nnoremap ;<Space> /<++><Enter>"_c4l
+nnoremap <leader>wn :match ExtraWhiteSpace /\s\+$/<CR>
+nnoremap <leader>wf :match<CR>
 
 "Section for global inoremaping
 inoremap ( ()<Esc>i
@@ -31,8 +33,12 @@ nnoremap gp :-1r !xclip -o -selection clipboard -r<CR>
 
 "Section for highlight management
 highlight Folded ctermbg=black
+highlight ExtraWhiteSpace ctermbg=red
 highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 
 "startup and mapping for c
 autocmd FileType c setlocal foldmethod=syntax
 autocmd BufNewFile *.c 0r ~/.local/skeletons/skeleton.c
+
+"diary
+autocmd BufEnter *.diary set textwidth=120

@@ -25,7 +25,7 @@
 </placement>
 
 <theme>
-  <name>Nord-Openbox</name>
+  <name>pigray2</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -78,12 +78,13 @@
 </theme>
 
 <desktops>
-  <number>3</number>
+  <number>4</number>
   <firstdesk>1</firstdesk>
   <names>
     <name>main</name>
-    <name>browser</name>
     <name>random</name>
+    <name>browser</name>
+    <name>game</name>
   </names>
   <popupTime>800</popupTime>
 </desktops>
@@ -125,6 +126,9 @@
   </keybind>
   <keybind key="W-o">
     <action name="GoToDesktop"><to>1</to><wrap>no</wrap></action>
+  </keybind>
+  <keybind key="W-b">
+    <action name="GoToDesktop"><to>3</to><wrap>no</wrap></action>
   </keybind>
 
   <!-- Moving windows to desktops-->
@@ -241,7 +245,7 @@
         <enabled>true</enabled>
         <name>tmux</name>
       </startupnotify>
-      <command>urxvt -e tmux</command>
+      <command>urxvt -name tmux-session -e tmux</command>
     </action>
   </keybind>
 
@@ -586,6 +590,17 @@
 	<application name="org.pwmt.zathura">
 		<decor>no</decor>
 		<shade>yes</shade>
+	</application>
+
+	<application name="tmux-session">
+		<decor>no</decor>
+		<shade>yes</shade>
+	</application>
+
+	<application name="weston-1">
+		<decor>no</decor>
+		<shade>yes</shade>
+		<fullscreen>yes</fullscreen>
 	</application>
 </applications>
 </openbox_config>
