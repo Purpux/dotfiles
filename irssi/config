@@ -20,8 +20,6 @@ chatnets = {
 
 channels = (
   { name = "#linux"; chatnet = "LiberaChat"; autojoin = "Yes"; },
-  { name = "#archlinux"; chatnet = "LiberaChat"; autojoin = "Yes"; }
-  { name = "#ubuntu-offtopic"; chatnet = "LiberaChat"; autojoin = "Yes"; },
   { name = "##anime"; chatnet = "LiberaChat"; autojoin = "Yes"; },
   { name = "#gnulinuxindia"; chatnet = "LiberaChat"; autojoin = "Yes"; },
 );

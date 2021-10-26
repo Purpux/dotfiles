@@ -1,5 +1,6 @@
 "respecting XDG
 set viminfo+=n$XDG_CACHE_HOME/vim/viminfo "moves .viminfo to cache
+set runtimepath+=n$XDG_DATA_HOME/vim "moves .~/.vim to .local/share
 
 "global settings
 let mapleader='\'

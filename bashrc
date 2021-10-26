@@ -16,6 +16,7 @@ alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget/history"
 alias vncviewer="HOME=$XDG_CONFIG_HOME/vnc vncviewer"
 alias irssi="irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi"
+alias minecraft-launcher="HOME=$XDG_DATA_HOME/minecraft minecraft-launcher"
 
 #global settings
 set -o vi
@@ -30,5 +31,6 @@ takeme (){
 		home)	cd ~ ;;
 		repos)	cd ~/bin/repos ;;
 		music)	cd ~/media/music ;;
+		hdd)	cd /mnt/hdd ;;
 	esac
 }

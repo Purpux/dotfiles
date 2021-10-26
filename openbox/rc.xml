@@ -25,7 +25,7 @@
 </placement>
 
 <theme>
-  <name>pigray2</name>
+  <name>retro</name>
   <titleLayout>SIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -256,6 +256,16 @@
         <name>Chromium</name>
       </startupnotify>
       <command>chromium</command>
+    </action>
+  </keybind>
+
+  <keybind key="W-v">
+    <action name="Execute">
+      <startupnotify>
+        <enabled>true</enabled>
+        <name>Virtual Manager</name>
+      </startupnotify>
+      <command>virt-manager</command>
     </action>
   </keybind>
 
