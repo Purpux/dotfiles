@@ -1,6 +1,8 @@
 "respecting XDG
 set viminfo+=n$XDG_CACHE_HOME/vim/viminfo "moves .viminfo to cache
 set runtimepath+=n$XDG_DATA_HOME/vim "moves .~/.vim to .local/share
+set directory=$XDG_CACHE_HOME/vim
+set backupdir=$XDG_CACHE_HOME/vim
 
 "global settings
 let mapleader='\'
@@ -40,6 +42,3 @@ highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 "startup and mapping for c
 autocmd FileType c setlocal foldmethod=syntax
 autocmd BufNewFile *.c 0r ~/.local/skeletons/skeleton.c
-
-"diary
-autocmd BufEnter *.diary set textwidth=120

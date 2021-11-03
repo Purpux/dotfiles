@@ -11,18 +11,19 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/config.py"
 export EDITOR="vi"
 export BROWSER="lynx"
-export LS_COLORS="*.c=00;31:"
 
 # clean-up
-export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export HISTFILE="$XDG_DATA_HOME/bash/history"
 export LESSHISTFILE=/dev/null
-export MYSQL_HISTFILE="$XDG_DATA_HOME/mysql/history"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
-export PULSE_COOKIE="$XDG_DATA_HOME/pulse/pulse-cookie"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"|source $MYVIMRC'
 export GNUPGHOME="$XDG_CONFIG_HOME/gnupg"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
 
-[[ $(tty) == "/dev/tty1" ]] && startx $XDG_CONFIG_HOME/X11/xinitrc
+$XDG_DATA_HOME/console-colorschemes/atlier_dark_custom
+[[ $(tty) == "/dev/tty1" ]] && tmux
+
+# export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+# export MYSQL_HISTFILE="$XDG_DATA_HOME/mysql/history"
+# export PULSE_COOKIE="$XDG_DATA_HOME/pulse/pulse-cookie"
