@@ -1,0 +1,11 @@
+#!/bin/bash
+
+current_workspace=$(swaymsg -p -t get_workspaces|grep focused|grep -o "[0-9]")
+
+if [[ "$1" == "next" ]]; then
+	(( current_workspace == 4 )) && exit 1
+	swaymsg workspace number $((current_workspace + 1))
+elif [[ "$1" == "prev" ]]; then
+	(( current_workspace == 1 )) && exit 1
+	swaymsg workspace number $((current_workspace - 1))
+fi
