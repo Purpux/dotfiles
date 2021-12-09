@@ -1,49 +1,49 @@
 ! special
-*.foreground:   #93a1a1
-*.background:   #002b36
-*.cursorColor:  #93a1a1
+*.foreground:   #ab9bab
+*.background:   #292929
+*.cursorColor:  #ab9bab
 
 ! black
-*.color0:       #002b36
-*.color8:       #657b83
+*.color0:       #181818
+*.color8:       #776977
 
 ! red
-*.color1:       #fc432f
-*.color9:       #fc432f
+*.color1:       #fc5b53
+*.color9:       #fc5b53
 
 ! green
-*.color2:       #859900
-*.color10:      #859900
+*.color2:       #379a37
+*.color10:      #379a37
 
 ! yellow
-*.color3:       #b58900
-*.color11:      #b58900
+*.color3:       #bb8a35
+*.color11:      #bb8a35
 
 ! blue
-*.color4:       #268bd2
-*.color12:      #268bd2
+*.color4:       #516aec
+*.color12:      #516aec
 
 ! magenta
-*.color5:       #6c71c4
-*.color13:      #6c71c4
+*.color5:       #7b59c0
+*.color13:      #7b59c0
 
 ! cyan
-*.color6:       #2aa198
-*.color14:      #2aa198
+*.color6:       #159393
+*.color14:      #159393
 
 ! white
-*.color7:       #93a1a1
-*.color15:      #fdf6e3
+*.color7:       #ab9bab
+*.color15:      #f7f3f7
 
-Xcursor.theme: Wesnoth-cur
+Xcursor.theme: Breeze
 !Xcursor.size: 64
 
 !!URxvt Appearance
 !Font stuff
-URxvt.font: xft:LiberationMono:style=Regular:size=14.5
-URxvt.boldFont: xft:LiberationMono:style=Bold:size=14.5
-URxvt.italicFont: xft:LiberationMono:style=Italic:size=14.5
-URxvt.boldItalicFont: xft:LiberationMono:style=BoldItalic:size=14.5
+URxvt.font: xft:FiraCode:style=Regular:size=16
+URxvt.boldFont: xft:FiraCode:style=Bold:size=16
+URxvt.italicFont: xft:FiraCode:style=Retina:size=16
+URxvt.boldItalicFont: xft:FiraCode:style=SemiBold:size=16
 
 !Other stuff
 URxvt.scrollBar: false

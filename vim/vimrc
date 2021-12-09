@@ -1,6 +1,9 @@
+"Annoyingly, I have to put this line here, or some settings that come before it won't work
+set nocompatible
+
 "respecting XDG
-set viminfo+=n$XDG_CACHE_HOME/vim/viminfo "moves .viminfo to cache
-set runtimepath+=n$XDG_DATA_HOME/vim "moves .~/.vim to .local/share
+set runtimepath+=$XDG_DATA_HOME/vim "moves .~/.vim to .local/share
+set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
 set directory=$XDG_CACHE_HOME/vim
 set backupdir=$XDG_CACHE_HOME/vim
 
@@ -14,11 +17,13 @@ set completeopt=menuone,noinsert,noselect
 set ignorecase
 set incsearch
 set secure
+set wildmenu
 colorscheme peachpuff
 syntax on
 
 "Section for global nnoremapping
 nnoremap ;<Space> /<++><Enter>"_c4l
+"showing trailing whitespace
 nnoremap <leader>wn :match ExtraWhiteSpace /\s\+$/<CR>
 nnoremap <leader>wf :match<CR>
 
@@ -30,15 +35,14 @@ inoremap ' ''<Esc>i
 inoremap { {}<Esc>i
 inoremap <leader>a <++><Esc>
 
-"Copying and pasting to X11 clip
-vnoremap gy :!xclip -i -selection clipboard -f<CR>
-nnoremap gp :-1r !xclip -o -selection clipboard -r<CR>
+"Copying and pasting to wayland clip
+vnoremap gy :write !wl-copy<CR><CR>
+nnoremap gp :-1read !wl-paste<CR>
 
 "Section for highlight management
 highlight Folded ctermbg=black
 highlight ExtraWhiteSpace ctermbg=red
 highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 
-"startup and mapping for c
-autocmd FileType c setlocal foldmethod=syntax
-autocmd BufNewFile *.c 0r ~/.local/skeletons/skeleton.c
+"Finding files
+set path+=**
