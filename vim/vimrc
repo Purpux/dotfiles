@@ -2,7 +2,8 @@
 set nocompatible
 
 "respecting XDG
-set runtimepath+=$XDG_DATA_HOME/vim "moves .~/.vim to .local/share
+set runtimepath-=$HOME/.vim
+set runtimepath+=$XDG_DATA_HOME/vim
 set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
 set directory=$XDG_CACHE_HOME/vim
 set backupdir=$XDG_CACHE_HOME/vim
@@ -46,3 +47,4 @@ highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 
 "Finding files
 set path+=**
+let g:netrw_banner=0
