@@ -1,14 +1,9 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
 # Global settings
 default_border none
-exec xrdb ~/.config/X11/Xresources && urxvt -e tmux
+gaps outer 10
+gaps inner 10
+smart_gaps on
 
-### Variables
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 
@@ -19,7 +14,7 @@ set $up k
 set $right l
 
 # Your preferred terminal emulator
-set $term urxvt
+set $term foot
 
 # Input
 input type:keyboard {
@@ -29,79 +24,37 @@ input type:keyboard {
 	repeat_delay 200
 }
 
-### Key bindings
-#
-# Basics:
-#
-    # Start a terminal
+# keybinds
     bindsym $mod+Return exec $term
-
-    # Kill focused window
     bindsym $mod+i kill
-
     # mouse button for dragging.
     floating_modifier $mod normal
-
     # Reload the configuration file
     bindsym $mod+Shift+r reload
+    bindsym $mod+Shift+e exec killall sway # exit sway
 
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec killall sway
-#
-# Moving around:
-#
-    # Move your focus around
+# moving around
     bindsym Mod1+$left focus left
     bindsym Mod1+$down focus down
     bindsym Mod1+$up focus up
     bindsym Mod1+$right focus right
 	
-    # Move the focused window with the same, but add Shift
-    bindsym Mod1+Shift+$left move left
-    bindsym Mod1+Shift+$down move down
-    bindsym Mod1+Shift+$up move up
-    bindsym Mod1+Shift+$right move right
-#
 # Workspaces:
-#
-    # Switch to workspace
     bindsym $mod+$right exec ~/.config/sway/switch-workspace next
     bindsym $mod+$left exec ~/.config/sway/switch-workspace prev
-
     bindsym $mod+o workspace number 1
     bindsym $mod+2 workspace number 2
     bindsym $mod+b workspace number 3
-    bindsym $mod+G workspace number 4
-	
-    # Move focused container to workspace
     bindsym Ctrl+Shift+l move container to workspace next
     bindsym Ctrl+Shift+h move container to workspace prev
-#
-# Layout stuff:
-#
-    bindsym $mod+n splith
-    bindsym $mod+v splitv
 
-    # Make the current focus fullscreen
+# layout
+    bindsym $mod+x splith
+    bindsym $mod+v splitv
     bindsym $mod+m fullscreen
 
-    # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+space floating toggle
+    bindsym $mod+t focus mode_toggle
 
-    # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
-
-    # Move focus to the parent container
-    bindsym $mod+a focus parent
-#
-# Scratchpad:
-#
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
-
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
-
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+# Autostart
+exec $term -e tmux

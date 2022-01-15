@@ -19,7 +19,7 @@ set ignorecase
 set incsearch
 set secure
 set wildmenu
-colorscheme peachpuff
+colorscheme ron
 syntax on
 
 "Section for global nnoremapping

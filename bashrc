@@ -13,7 +13,7 @@ alias useflags='vim /var/db/repos/gentoo/profiles/use.desc'
 #cleanup
 alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget/history"
 alias python="HOME=$XDG_DATA_HOME/python python"
-alias irssi="irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi"
+alias irssi="irssi --config=$XDG_CONFIG_HOME/irssi/config --home=$XDG_DATA_HOME/irssi"
 alias minecraft-launcher="HOME=$XDG_DATA_HOME/minecraft minecraft-launcher"
 
 #global settings
@@ -29,6 +29,5 @@ tm (){
 	case "$1" in
 		repos)	cd ~/bin/repos ;;
 		hdd)	cd /mnt/hdd ;;
-		ssd)	cd /mnt/ssd ;;
 	esac
 }
