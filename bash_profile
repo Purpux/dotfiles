@@ -19,6 +19,7 @@ startup (){
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_PICTURES_DIR="$HOME/media/screenshots"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/config.py"
 export EDITOR="vi"
 export BROWSER="firefox"

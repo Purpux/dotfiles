@@ -19,7 +19,7 @@ set ignorecase
 set incsearch
 set secure
 set wildmenu
-colorscheme ron
+colorscheme peachpuff
 syntax on
 
 "Section for global nnoremapping
@@ -38,7 +38,7 @@ inoremap <leader>a <++><Esc>
 
 "Copying and pasting to wayland clip
 vnoremap gy :write !wl-copy<CR><CR>
-nnoremap gp :-1read !wl-paste<CR>
+nnoremap gp :-1read !wl-paste --no-newline<CR>
 
 "Section for highlight management
 highlight Folded ctermbg=black

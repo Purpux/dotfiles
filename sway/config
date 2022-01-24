@@ -23,6 +23,7 @@ input type:keyboard {
 	repeat_delay 300
 	repeat_delay 200
 }
+seat seat0 xcursor_theme volantes_cursors 48
 
 # keybinds
     bindsym $mod+Return exec $term
@@ -32,6 +33,8 @@ input type:keyboard {
     # Reload the configuration file
     bindsym $mod+Shift+r reload
     bindsym $mod+Shift+e exec killall sway # exit sway
+	# screenshots
+	bindsym Print exec grim -g "$(slurp)"
 
 # moving around
     bindsym Mod1+$left focus left
