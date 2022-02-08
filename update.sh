@@ -9,4 +9,4 @@ for i in "${Array[@]}"; do
 	cp $i $(echo $i|cut -d "." -f 2)
 done
 
-cp -r ~/.config/{tmux,python,vim,sway} .
+cp -r ~/.config/{foot,gtk-3.0,tmux,python,vim,sway} .

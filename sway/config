@@ -27,12 +27,14 @@ seat seat0 xcursor_theme volantes_cursors 48
 
 # keybinds
     bindsym $mod+Return exec $term
+    bindsym $mod+u exec virt-manager
     bindsym $mod+i kill
     # mouse button for dragging.
     floating_modifier $mod normal
     # Reload the configuration file
     bindsym $mod+Shift+r reload
     bindsym $mod+Shift+e exec killall sway # exit sway
+	
 	# screenshots
 	bindsym Print exec grim -g "$(slurp)"
 
@@ -48,8 +50,8 @@ seat seat0 xcursor_theme volantes_cursors 48
     bindsym $mod+o workspace number 1
     bindsym $mod+2 workspace number 2
     bindsym $mod+b workspace number 3
-    bindsym Ctrl+Shift+l move container to workspace next
-    bindsym Ctrl+Shift+h move container to workspace prev
+    bindsym Ctrl+$mod+l move container to workspace next
+    bindsym Ctrl+$mod+h move container to workspace prev
 
 # layout
     bindsym $mod+x splith

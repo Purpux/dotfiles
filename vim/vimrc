@@ -21,6 +21,7 @@ set secure
 set wildmenu
 colorscheme peachpuff
 syntax on
+autocmd FileType * setlocal formatoptions-=cro
 
 "Section for global nnoremapping
 nnoremap ;<Space> /<++><Enter>"_c4l
@@ -37,7 +38,7 @@ inoremap { {}<Esc>i
 inoremap <leader>a <++><Esc>
 
 "Copying and pasting to wayland clip
-vnoremap gy :write !wl-copy<CR><CR>
+vmap gy y:call system("wl-copy --trim-newline", @@)<CR>
 nnoremap gp :-1read !wl-paste --no-newline<CR>
 
 "Section for highlight management
