@@ -49,3 +49,6 @@ highlight MatchParen cterm=bold ctermbg=none ctermfg=darkgreen
 "Finding files
 set path+=**
 let g:netrw_banner=0
+
+".ms files
+autocmd Filetype nroff set foldmethod=marker

@@ -1,8 +1,11 @@
 # Global settings
-default_border none
+default_border pixel
+default_floating_border pixel
 gaps outer 10
 gaps inner 10
 smart_gaps on
+smart_borders on
+client.focused "55229c" "55229c" "55229c" "55229c" "55229c"
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -26,7 +29,8 @@ input type:keyboard {
 seat seat0 xcursor_theme volantes_cursors 48
 
 # keybinds
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec $term -c ~/.config/foot/foot-normal.ini
+	bindsym $mod+e exec $term -e tmux
     bindsym $mod+u exec virt-manager
     bindsym $mod+i kill
     # mouse button for dragging.
@@ -50,16 +54,13 @@ seat seat0 xcursor_theme volantes_cursors 48
     bindsym $mod+o workspace number 1
     bindsym $mod+2 workspace number 2
     bindsym $mod+b workspace number 3
-    bindsym Ctrl+$mod+l move container to workspace next
-    bindsym Ctrl+$mod+h move container to workspace prev
+
+    bindsym Ctrl+$mod+$right exec ~/.config/sway/switch-workspace window next
+    bindsym Ctrl+$mod+$left exec ~/.config/sway/switch-workspace window prev
 
 # layout
-    bindsym $mod+x splith
-    bindsym $mod+v splitv
     bindsym $mod+m fullscreen
-
-    bindsym $mod+space floating toggle
-    bindsym $mod+t focus mode_toggle
+    bindsym $mod+t splitt
 
 # Autostart
 exec $term -e tmux
